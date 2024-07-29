@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<<<<<<< HEAD
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,3 +41,21 @@
     @vite('resources/js/app.js')
 </body>
 </html>
+=======
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yo soy frontera</title>
+        @vite('resources/css/app.css')
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="app"></div>
+        @vite('resources/js/app.js')
+    </body>
+</html>
+
+>>>>>>> 343e10350b4f01b0aea4a03df4f8c9a9e282e566
