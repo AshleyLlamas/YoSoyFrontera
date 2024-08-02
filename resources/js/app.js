@@ -9,10 +9,10 @@ import '../css/app.css';
 // Importa Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faCoffee, faUser, faBars, faHouse } from '@fortawesome/free-solid-svg-icons'; // Importa todos los iconos necesarios
+import { faCoffee, faUser, faBars, faTimes, faHouse, faSignOutAlt, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 // Añade los iconos a la biblioteca
-library.add(faCoffee, faUser, faBars, faHouse);
+library.add(faCoffee, faUser, faBars, faTimes, faHouse, faSignOutAlt, faCircleArrowRight);
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
@@ -23,7 +23,7 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
-            .component('font-awesome-icon', FontAwesomeIcon) // Registra el componente globalmente
+            .component('font-awesome-icon', FontAwesomeIcon)
             .mount(el);
     },
     progress: {
